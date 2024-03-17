@@ -1,0 +1,75 @@
+*Cheat Sheet JavaScript : Syntaxe de Base**
+
+1. Variables : Déclaration et initialisation de variables.
+    let nom_variable = valeur;
+
+2. Types de données : Types de données pris en charge par JavaScript.
+    Nombre, chaîne de caractères, booléen, tableau, objet, etc.
+
+3. Opérateurs arithmétiques : Opérateurs pour effectuer des opérations mathématiques.
+    Addition (+), soustraction (-), multiplication (*), division (/), etc.
+    let addition = 5 + 3;
+    let multiplication = 10 * 2;
+
+4. Opérateurs de comparaison : Opérateurs pour comparer des valeurs.
+    Égal à (==), strictement égal à (===), différent de (!=), plus petit que (<), etc..
+    let a = 5;
+    let b = 10;
+    console.log(a === b); // false
+
+5. Structures de contrôle : Instructions pour contrôler le flux d'exécution.
+    Conditionnelle (if...else), boucle (for, while), switch, etc.
+    let x = 10;
+    for (let i = 0; i < 42; i++) {
+        // executing this 42 times
+        if (x > 5) {
+            console.log("x est supérieur à 5");
+        } else {
+            console.log("x est inférieur ou égal à 5");
+        }
+    }
+
+6. Fonctions : Blocs de code réutilisables.
+    function nom_fonction(paramètres) {
+       // Corps de la fonction
+    }
+
+7. Tableaux : Structures de données pour stocker des collections ordonnées d'éléments.
+    let nom_tableau = [valeur1, valeur2, ...];
+
+    push() : Ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle longueur du tableau.
+    let fruits = ["Pomme", "Banane", "Orange"];
+    fruits.push("Fraise");
+    console.log(fruits); // ["Pomme", "Banane", "Orange", "Fraise"]
+
+    pop() : Supprime le dernier élément d'un tableau et retourne cet élément.
+    let fruits = ["Pomme", "Banane", "Orange"];
+    let dernierFruit = fruits.pop();
+    console.log(dernierFruit); // "Orange"
+
+    boucle: Boucler sur les elements d'un tableau
+    let fruits = ["Pomme", "Banane", "Orange"];
+    for (const fruit of fruits) {
+        console.log(fruit);
+    });
+
+    **Cheat Sheet JavaScript : Manipulation du DOM**
+
+1. **Sélection d'éléments** : Sélectionner des éléments dans le DOM.
+   - `document.getElementById(id)` : Sélectionne un élément par son ID.
+   - `document.getElementsByClassName(className)` : Sélectionne les éléments par leur classe.
+
+2. **Modification du contenu** : Modifier le contenu des éléments.
+   - `element.innerHTML` : Contenu HTML de l'élément.
+   - `element.innerText` : Contenu textuel de l'élément.
+   - `element.setAttribute(attribute, value)` : Définit la valeur d'un attribut sur l'élément.
+   - `element.style.property = value` : Modifie les styles CSS de l'élément.
+
+3. **Ajout et suppression d'éléments** : Ajouter ou supprimer des éléments dans le DOM.
+   - `document.createElement(tagName)` : Crée un nouvel élément avec le tag spécifié.
+   - `parentNode.appendChild(node)` : Ajoute un nœud à la fin de la liste des enfants d'un nœud parent.
+   - `parentNode.removeChild(node)` : Supprime un nœud enfant d'un nœud parent.
+
+4. **Écouteurs d'événements** : Gérer les événements sur les éléments.
+   - `element.addEventListener(event, function)` : Ajoute un écouteur d'événement à un élément.
+   - `element.removeEventListener(event, function)` : Supprime un écouteur d'événement d'un élément.
